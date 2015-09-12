@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>GameScene.qml</file>
+        <file>Coin.qml</file>
+        <file>MenuScene.qml</file>
+        <file>MenuButtonStyle.qml</file>
+    </qresource>
+</RCC>
