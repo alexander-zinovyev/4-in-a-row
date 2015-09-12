@@ -2,9 +2,9 @@ TEMPLATE = app
 
 QT += qml quick widgets
 
-SOURCES += main.cpp \
-    game.cpp \
-    coin.cpp
+SOURCES += src/main.cpp \
+    src/game.cpp \
+    src/coin.cpp
 
 RESOURCES += qml.qrc
 
@@ -15,7 +15,7 @@ QML_IMPORT_PATH =
 include(deployment.pri)
 
 HEADERS += \
-    game.h \
-    coin.h
+    include/game.h \
+    include/coin.h
 
 CONFIG += c++11

@@ -1,8 +1,8 @@
 #include <QApplication>
 #include <QQmlApplicationEngine>
 #include <QtQml>
-#include "game.h"
-#include "coin.h"
+#include "include/game.h"
+#include "include/coin.h"
 
 int main(int argc, char *argv[])
 {
@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
     QQmlApplicationEngine engine;
     QQmlContext *context = engine.rootContext();
     context->setContextProperty("game", game);
-    engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
+    engine.load(QUrl(QStringLiteral("qrc:/qml/main.qml")));
 
     return app.exec();
 }

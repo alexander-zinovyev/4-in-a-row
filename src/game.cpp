@@ -1,4 +1,4 @@
-#include "game.h"
+#include "include/game.h"
 
 Game::Game(QPair<int, int> size, QObject *parent) :
     QObject(parent),
@@ -89,7 +89,7 @@ bool Game::didPlayerWin(int index) {
     //Check diagonals
     //calculating index offsets
     int leftOffset = index % boardSize.first,
-        rightOffset = boardSize.first - distanceToLeft - 1,
+        rightOffset = boardSize.first - leftOffset - 1,
         topOffset = index / boardSize.first,
         bottomOffset = boardSize.second - topOffset - 1;
 

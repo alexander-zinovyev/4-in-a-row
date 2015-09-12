@@ -1,4 +1,4 @@
-#include "coin.h"
+#include "include/coin.h"
 
 Coin::Coin(QObject *parent) : QObject(parent), owner(Owner::None) {
 
